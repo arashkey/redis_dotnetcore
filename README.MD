@@ -2,7 +2,7 @@
 
 for run project, use run.bat
 
-## Redis server config
+## Redis server configuration
 
 For config redis server run this command
 
