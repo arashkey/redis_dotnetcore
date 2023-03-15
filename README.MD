@@ -1,6 +1,6 @@
 # Redis
 
-for run project sample use run.bat
+for run project, use run.bat
 
 ## Redis server config
 
