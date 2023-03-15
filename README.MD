@@ -4,7 +4,7 @@ for run project, use run.bat
 
 ## Redis server configuration
 
-For config redis server run this command
+For config redis server run this command on server (centos os)
 
 ```bash
 #!/bin/bash
