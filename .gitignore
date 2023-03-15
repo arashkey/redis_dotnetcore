@@ -360,6 +360,4 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-/AlgorithmicTrading.Api/Temp/
-/AlgorithmicTrading.Entities/netcoreapp3.1
-/AlgorithmicTrading.Api/wwwroot/assets/apk/easy-like.apk
+ 
