@@ -24,5 +24,5 @@ docker pull redis
 docker network create -d bridge redisnet
  docker run -p 9191:6379 -d --name RedisCache redis --requirepass 123456
 ```
-
+## Project configuration
 Don't forget to replace all of ip of server in the project with your server ip (127.0.0.1)
