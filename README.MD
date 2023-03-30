@@ -33,5 +33,5 @@ firewall-cmd --add-port=9191/tcp --permanent
 firewall-cmd --reload
 ```
 ## Project configuration
-if you want, you can change 9191 port for redis connecting
+if you want, you can change 9191 port for redis connecting  
 Don't forget to replace all of ip of server in the project with your server ip (127.0.0.1)
