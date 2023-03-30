@@ -28,7 +28,7 @@ Do not forget to open redis port on firewall (for example firewall-cmd)
 ```bash
 #!/bin/bash
 
-firewall-cmd --add-port=1234/tcp --permanent
+firewall-cmd --add-port=9191/tcp --permanent
 firewall-cmd --reload
 ```
 ## Project configuration
