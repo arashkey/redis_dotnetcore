@@ -23,7 +23,7 @@ docker network create -d bridge redisnet
 
 
 docker pull redis
-docker run -p 9191:6379  --restart unless-stopped -d --name RedisCache redis --requirepass 123456
+docker run -p 9191:6379  --restart unless-stopped -d --name RedisCache redis --requirepass REDIS_SERVER_PASSWORD
 ```
 Do not forget to open redis port on firewall (for example firewall-cmd)
 ```bash
@@ -33,4 +33,5 @@ firewall-cmd --add-port=9191/tcp --permanent
 firewall-cmd --reload
 ```
 ## Project configuration
+if you want, you can change 9191 port for redis connecting
 Don't forget to replace all of ip of server in the project with your server ip (127.0.0.1)
