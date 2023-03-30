@@ -9,13 +9,14 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 #region Redis 
+var redisConfiguration = "127.0.0.1:9191,password=123456";
 builder.Services.AddStackExchangeRedisCache(options =>
            {
-               options.Configuration = "127.0.0.1:9191,password=123456";
+               options.Configuration = redisConfiguration;
                options.InstanceName = "";
            });
 
-builder.Services.AddSingleton<IConnectionMultiplexer>(provider => ConnectionMultiplexer.Connect("127.0.0.1:9191,password=123456"));
+builder.Services.AddSingleton<IConnectionMultiplexer>(provider => ConnectionMultiplexer.Connect(redisConfiguration));
 
 #endregion
 
