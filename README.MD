@@ -18,10 +18,11 @@ vim  /etc/sysctl.conf
 vm.overcommit_memory = 1
 net.core.somaxconn=65535
 #then reboot system
+#add network to docker
+docker network create -d bridge redisnet
 
 
 docker pull redis
-docker network create -d bridge redisnet
 docker run -p 9191:6379  --restart unless-stopped -d --name RedisCache redis --requirepass 123456
 ```
 Do not forget to open redis port on firewall (for example firewall-cmd)
